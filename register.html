@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    /> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="stylesheets/css/all.css" />
+</head>
+
+<body>
+    <div class="basic_wrap index_wrap">
+        <header class="header">
+            <div class="container">
+                <!-- <img src="images/todo/logo.svg" alt="" />
+
+          <nav class="navbar">
+            <a href="">Kaya的待辦</a>
+            <a href="">登出</a>
+          </nav> -->
+            </div>
+        </header>
+
+        <main class="web_detail">
+            <div class="container">
+                <div class="index_zone d-flex justify-content-around align-items-center row">
+
+                    <div class="d-none d-sm-block col-12 col-md-6" style="text-align: center;">
+                        <img src="images/todo/left.svg" alt="" />
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h1 class="register_login_title mb-5">註冊您的帳號</h1>
+
+
+
+
+
+                        <!-- 使用這些通用類別來快速地改變文字內容的 font-weight 或 font-style。font-style 通用類別的縮寫為 .fst-*， font-weight 通用類別的縮寫為 .fw-* -->
+
+
+                        <!-- Bootstrap 還包括一個 .mx-auto 類別，用於將固定寬度的塊級內容水平置中 (也就是具有 display: block 、本身設有 width 的內容)，是透過將水平 margin 設置為 auto 達成 -->
+                        <!-- mx-auto  不像是父層使用的  而是內層用來平衡自己兩邊兩側的空間 margi-right和left -->
+
+                        <!-- margin 0 auto 則上下左右  內元素的寬度低於外元素 可以上在自身 使其置中-->
+                        <!-- https://hbj.coderbridge.io/2021/04/08/html-question-5/ -->
+
+                        <div class="mb-3 mx-auto" style="max-width: 500px;">
+                            <label for="" class="form-label fw-bold">Email</label>
+                            <input type="email" value="" id="inputEmail" name="信箱"
+                                class="form-control rounded-5 border-0">
+                            <p class="checkemail text-danger mt-2" style="text-align: center;"></p>
+                        </div>
+
+                        <div class="mb-3 mx-auto" style="max-width: 500px;">
+                            <label for="" class="form-label fw-bold">暱稱</label>
+                            <input type="text" id="inputNickname" name="暱稱" class="form-control rounded-5 border-0">
+
+                        </div>
+
+
+                        <div class="mb-3 mx-auto" style="max-width: 500px;">
+                            <label for="" class="form-label fw-bold">密碼
+                            </label>
+                            <input name="密碼" id="inputPasswordMain" type="password"
+                                class="form-control rounded-5 border-0">
+
+                        </div>
+
+                        <div class="mb-4 mx-auto" style="max-width: 500px;">
+                            <label for="" class="form-label fw-bold">再次輸入密碼
+                            </label>
+                            <input name="再次輸入密碼" id="inputPasswordCheck" type="password"
+                                class="form-control rounded-5 border-0">
+                            <p class="checkpassword text-danger mt-2" style="text-align: center;"></p>
+                        </div>
+
+                        <p class="mb-3 text-danger" style="text-align: center;" id="registerResult"></p>
+
+
+
+                        <div style="width: 300px;" class="mx-auto row">
+                            <button class="btn btn-dark btn-lg px-5 rounded-5 mb-4 col-12 col-sm-6"
+                                style="margin: 0 auto;" id="registerSubmit">註冊</button>
+                            <a class="align-self-end" style="text-align: center;" href="index.html">登入頁 --></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/tool_validate.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
